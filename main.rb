@@ -26,9 +26,9 @@ def basic
   puts "Select operation: +, -, *, /"
   operation = gets.chomp
   puts "Enter first number:"
-  num1 = gets.chomp
+  num1 = gets.to_i
   puts "Enter second number:"
-  num2 = gets.chomp
+  num2 = gets.to_i
   if operation == '+'
     puts add(num1, num2)
   elsif operation == '-'
@@ -37,6 +37,22 @@ def basic
     puts multiplication(num1, num2)
   elsif operation == '/'
     puts divide(num1, num2)
+  end
+end
+
+def advance
+  puts "(s)quare root or (p)ower"
+  operation = gets.chomp
+  if operation == 's'
+    puts '"Enter first number:"'
+    num1 = gets.to_i
+    puts "Enter second number:"
+    num2 = gets.to_i
+    puts add(num1, num2)
+  elsif operation == 'p'
+    puts '"Enter number:"'
+    num = gets.to_i
+    puts subtract(num)
   end
 end
 
