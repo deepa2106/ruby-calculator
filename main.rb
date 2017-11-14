@@ -21,3 +21,15 @@ end
 def power(num, power_number)
   num ** power_number
 end
+
+def calculator
+  puts "(a)dvance calculator or (b)asic calculator"
+  choice = gets.chomp
+  if choice == 'b'
+    basic
+  elsif choice == 'a'
+    advance
+  end
+end
+
+calculator
