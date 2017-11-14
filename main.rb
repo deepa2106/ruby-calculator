@@ -17,3 +17,7 @@ end
 def square_root(num)
   Math.sqrt(num)
 end
+
+def power(num, power_number)
+  num ** power_number
+end
