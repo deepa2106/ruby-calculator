@@ -22,6 +22,24 @@ def power(num, power_number)
   num ** power_number
 end
 
+def basic
+  puts "Select operation: +, -, *, /"
+  operation = gets.chomp
+  puts "Enter first number:"
+  num1 = gets.chomp
+  puts "Enter second number:"
+  num2 = gets.chomp
+  if operation == '+'
+    puts add(num1, num2)
+  elsif operation == '-'
+    puts subtract(num1, num2)
+  elsif operation == '*'
+    puts multiplication(num1, num2)
+  elsif operation == '/'
+    puts divide(num1, num2)
+  end
+end
+
 def calculator
   puts "(a)dvance calculator or (b)asic calculator"
   choice = gets.chomp
